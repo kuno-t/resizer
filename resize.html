@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang=“ja”>
+    <head>
+        <meta charset="UTF-8">
+        <title>reSize</title>
+        <link rel="stylesheet" href="StyleSheet.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+        <form name="hoge" id="form1">
+            <table id="table1">
+                <tr>
+                    <th>
+                        <p>データ種類</p>
+                    </th>
+                    <th>
+                        <p>変化前</p>
+                    </th>
+                    <th>
+                        <p>→</p>
+                    </th>
+                    <th>
+                        <p>変化後</p>
+                    </th>
+                    <th>
+                        <p>固定</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p>身長(長さ)</p>
+                    </th>
+                    <td>
+                        <input type="text" id="height1" data-unit="length" data-dim="1" value="1.56">
+                    </td>
+                    <td>
+                        <p>→</p>
+                    </td>
+                    <td>
+                        <input type="text" id="reheight1" data-unit="length" data-dim="1">
+                    </td>
+                    <td>
+                        <input name="hoge" type="radio" value="0">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <p>体重(重さ)</p>
+                    </th>
+                    <td>
+                        <input type="text" id="weight1" data-unit="weight" data-dim="3" value="42.4">
+                    </td>
+                    <td>
+                        <p>→</p>
+                    </td>
+                    <td>
+                        <input type="text" id="reweight1" data-unit="weight" data-dim="3">
+                    </td>
+                    <td>
+                        <input name="hoge" type="radio" value="1">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <p>距離</p>
+                    </th>
+                    <td>
+                        <input type="text" id="length1" data-unit="length" data-dim="1" value = "25.3" >
+                    </td>
+                    <td>
+                        <p>→</p>
+                    </td>
+                    <td>
+                        <input type="text" id="relength1" data-unit="length" data-dim="1">
+                    </td>
+                    <td>
+                        <input name="hoge" type="radio" value="2">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <p>面積</p>
+                    </th>
+                    <td>
+                        <input type="text" id="area1" data-unit="area" data-dim="2">
+                    </td>
+                    <td>
+                        <p>→</p>
+                    </td>
+                    <td>
+                        <input type="text" id="rearea1" data-unit="area" data-dim="2">
+                    </td>
+                    <td>
+                        <input name="hoge" type="radio" value="3">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <p>体積</p>
+                    </th>
+                    <td>
+                        <input type="text" id="volume1" data-unit="volume" data-dim="3">
+                    </td>
+                    <td>
+                        <p>→</p>
+                    </td>
+                    <td>
+                        <input type="text" id="revolume1" data-unit="volume" data-dim="3">
+                    </td>
+                    <td>
+                        <input name="hoge" type="radio" value="4">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <p>相対距離</p>
+                    </th>
+                    <td>
+                        <input type="text" id="length2" data-unit="length" data-dim="-1">
+                    </td>
+                    <td>
+                        <p>→</p>
+                    </td>
+                    <td>
+                        <input type="text" id="relength2" data-unit="length" data-dim="-1">
+                    </td>
+                    <td>
+                        <input name="hoge" type="radio" value="5">
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="3">
+                        <p>倍率</p>
+                    </th>
+                    <td colspan="2">
+                        距離
+                        <input type="text" id="scale1" data-unit="scale" data-dim="1">倍
+                    </td>
+                    <td>
+                        <input name="hoge" type="radio" value="6">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        面積
+                        <input type="text" id="scale2" data-unit="scale" data-dim="2">倍
+                    </td>
+                    <td>
+                        <input name="hoge" type="radio" value="7">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        体積
+                        <input type="text" id="scale3" data-unit="scale" data-dim="3">倍
+                    </td>
+                    <td>
+                        <input name="hoge" type="radio" value="8">
+                    </td>
+                </tr>
+            </table>
+
+            <input type="button" value="計算" id="button1">
+        </form>
+    </body>
+    <footer>
+    </footer>
+    
+    <script type="text/javascript" src="resize.js"></script>
+</html>
